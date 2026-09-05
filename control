@@ -1,0 +1,14 @@
+Package: com.miron302.hotspotssidchanger
+Name: HotspotSSIDChanger
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: Set a custom Personal Hotspot SSID without renaming your device.
+Maintainer: miron302
+Author: miron302
+Section: Tweaks
+Depends: firmware (>= 16.0), mobilesubstrate | com.saurik.substrate | com.opa334.libhooker
+Conflicts:
+Replaces:
+Provides:
+Homepage: https://github.com/miron302/HotspotSSIDChanger
+Tag: compatible_min::ios16.0, compatible_max::ios16.99

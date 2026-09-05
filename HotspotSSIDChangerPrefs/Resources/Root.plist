@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>title</key>
+    <string>HotspotSSIDChanger</string>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>footerText</key>
+            <string>⚠️ Changing the hotspot SSID also changes your AirDrop name. iOS uses the same underlying process (sharingd) for Personal Hotspot and AirDrop naming, so they can't be set independently.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>footerText</key>
+            <string>Set a custom Wi-Fi name for Personal Hotspot only. This never changes your device's name in Settings &gt; General &gt; About.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>label</key>
+            <string>Enable Custom SSID</string>
+            <key>key</key>
+            <string>Enabled</string>
+            <key>default</key>
+            <false/>
+            <key>PostNotification</key>
+            <string>com.miron302.hotspotssidchanger/prefschanged</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSEditTextCell</string>
+            <key>label</key>
+            <string>Hotspot SSID</string>
+            <key>key</key>
+            <string>CustomSSID</string>
+            <key>default</key>
+            <string></string>
+            <key>PostNotification</key>
+            <string>com.miron302.hotspotssidchanger/prefschanged</string>
+            <key>autoCapitalize</key>
+            <string>none</string>
+            <key>autocorrectionType</key>
+            <string>no</string>
+            <key>isRequired</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>footerText</key>
+            <string>Up to 32 characters. Leave blank or disable the switch above to restore Apple's default Personal Hotspot naming (your device name).</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>Restore Default Behavior</string>
+            <key>action</key>
+            <string>restoreDefaultTapped</string>
+        </dict>
+    </array>
+</dict>
+</plist>

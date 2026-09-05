@@ -1,0 +1,19 @@
+{
+    Filter = {
+        /*
+         * sharingd is included by default (not just wifid) because it's the
+         * daemon that owns the Personal Hotspot session itself, and is also
+         * the daemon that handles AirDrop/Continuity peer naming. Since the
+         * SSID hook works by intercepting the shared "computer name" lookup
+         * (see Tweak.x), having it active in sharingd means your AirDrop
+         * name changes too whenever the custom SSID is enabled - this is
+         * exactly what the injected Settings warning tells the user about.
+         *
+         * If you test on your device and find wifid alone is sufficient to
+         * change the broadcast SSID, you can remove "sharingd" here to avoid
+         * the AirDrop side effect - just also remove/adjust the warning text
+         * in Tweak.x's HSSCInjectChangeSSIDButton so the UI stays accurate.
+         */
+        Executables = ( "wifid", "sharingd", "Preferences" );
+    };
+}
