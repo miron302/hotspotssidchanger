@@ -9,7 +9,7 @@ A **rootless jailbreak tweak for iOS 16** that lets you set a custom hotspot SSI
 -  Integrated into the hotspot settings menu 
   
 
-> **Note:** The tweak hooks into `wifid`, which I think it only handles the hotspot name, if I'm wrong please make an issue about it and I will try to find another service to hook the custom name too. The device name in settings does **NOT** change.
+> **Note:** The tweak hooks into `wifid`, which I think it only handles the hotspot name, if I'm wrong please make an issue about it and I will try to find another service to hook the custom name to. The device name in settings does **NOT** change.
 
 ## Compatibility
 
